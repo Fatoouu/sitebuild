@@ -1,0 +1,25 @@
+/* variable */
+html{
+    --white: #ffffff; 
+    --orange: #fd5d14; 
+    --darkblue: #040f28; 
+    --lightgray: #f4f6f8; 
+    --red: red; 
+}
+
+/* navbar1 */
+.location{
+    margin-top: 0.5em;
+    /* margin-left: 2em; */
+    /* width: 100%; */
+    color: var(--orange);
+    font-size: 4.5rem;
+}
+.title_nav1{
+    font-size: 1em;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+.bloc1_location{
+
+}
