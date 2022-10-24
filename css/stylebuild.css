@@ -5,21 +5,68 @@ html{
     --darkblue: #040f28; 
     --lightgray: #f4f6f8; 
     --red: red; 
+    --black: black; 
 }
 
 /* navbar1 */
 .location{
-    margin-top: 0.5em;
-    /* margin-left: 2em; */
-    /* width: 100%; */
+    margin-top: 0.7em;
+    margin-left: 2.3em;
     color: var(--orange);
-    font-size: 4.5rem;
+    font-size: 3rem;
+}
+.envelope{
+    margin-top: 0.6em;
+    margin-left: 2.3em;
+    color: var(--orange);
+    font-size: 2.9rem;
+}
+.phone{
+    margin-top: 0.6em;
+    margin-left: 2.3em;
+    color: var(--orange);
+    font-size: 3rem;
 }
 .title_nav1{
     font-size: 1em;
     font-weight: 650;
     text-transform: uppercase;
 }
+.text_bloc1_location{
+    padding-left: 2em;
+    padding-top: 2em;
+    border-left: 1 px solid var(--black);
+}
+.text_bloc2_envelope{
+    padding-left: 2em;
+    padding-top: 2em;
+    border-left: 1 px solid var(--black);
+}
+.text_bloc3_phone{
+    padding-left: 2em;
+    padding-top: 2em;
+    border-left: 1 px solid var(--black);
+}
 .bloc1_location{
+    border-right: 2px solid var(--lightgray);
+}
+.bloc2_envelope{
+    border-right: 2px solid var(--lightgray);
+}
 
+/* navbar2 */
+#navbar {
+    background-image: url(../image_build/bg.png);
+    padding: 0;
+}
+.nav-link{
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-item .devis {
+    background-color: var(--orange);
+    padding: 2em;
+    display: inline;
+    list-style: none;
 }
