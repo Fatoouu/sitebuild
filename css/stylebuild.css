@@ -82,7 +82,7 @@ html{
 }
 .image_carou{
     /* background-color: var(--black); */
-    opacity: .7;
+    opacity: .5;
 }
 .text_title_caroussel{
     color: var(--white);
