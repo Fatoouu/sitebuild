@@ -5,18 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylebuild.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>Site Build</title>
 </head>
 <body>
-    <div class="container_fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 bloc1_location">
-                <div class="row">
+                <div class="row gx-0">
                     <div class="col-md-3">
                         <i class="location fa-solid fa-location-dot"></i>
                     </div>
@@ -26,6 +24,7 @@
                     </div>                    
                 </div>
             </div>
+
             <div class="col-md-4 bloc2_envelope">
                 <div class="row">
                     <div class="col-md-3">
@@ -37,6 +36,7 @@
                     </div>                    
                 </div>
             </div>
+
             <div class="col-md-4 bloc3_phone">
                 <div class="row">
                     <div class="col-md-3">
@@ -50,15 +50,15 @@
             </div>            
         </div>
     </div>
-
-        <nav class="navbar navbar-expand-lg" id="navbar">
-            <img src="image_build/logo.jpg" alt="img">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+        <!-- Navbar2 -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <img src="image_build/logo.jpg" alt="img">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="accueil nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                 </li>
                 <li class="nav-item">
@@ -72,25 +72,56 @@
                     Pages
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Projet</a></li>
-                    <li><a class="dropdown-item" href="#">Equipe </a></li>
-                    <!-- <li><hr class="dropdown-divider"></li> -->
-                    <li><a class="dropdown-item" href="#">Témoignage</a></li>
+                        <li><a class="dropdown-item" href="#">Projet</a></li>
+                        <li><a class="dropdown-item" href="#">Equipe </a></li>
+                        <li><a class="dropdown-item" href="#">Témoignage</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
-                
-                </ul>
-            </div>
-            <li class="nav-item">
-                <a class="nav-link devis" href="#">Obtenir un devis</a>
-            </li>
-        </nav>
-        <div class="caroussel">
-            <img src="image_build/carousel-2.jpg" alt="image">
+            </ul>
         </div>
+        <li class="nav-item">
+            <a class="nav-link devis" href="#">Obtenir un devis <i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+    </nav>
+
+    <!-- Caroussel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 image_carou" src="image_build/carousel-2.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 image_carou" src="image_build/carousel-1.jpg" alt="Second slide">
+            </div>
+            
+            <i class="fa-solid fa-screwdriver-wrench outil"></i>
+            <h1 class="text_title_caroussel">Nous sommes dignes <br> de confiance pour <br> votre projet</h1>
+            <a href="#" class="btn"> Nous Contacter </a>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+    </div>
+
+    <!-- Bloc présentation -->
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="title_text_pre1">Nous sommes le leader de l'industrie de la construction </h1>
+            <h2 class="sous_title_pre1">Une société innovante dynamique et inspirante. Vous pouvez nous faire confiance pour vos futurs travaux. Un travail rapide et efficace</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo adipisci sint. Deleniti quas adipisci et aspernatur laboriosam laudantium hic ratione totam error incidunt! Architecto libero praesentium repellat repellendus accusamus.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="image_build/bg-2.png" alt="image">
+        </div>
+    </div>
 
 
         
